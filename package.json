@@ -1,0 +1,23 @@
+{
+  "name": "projeto-next-level-week",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoSampaioRJ/projeto-next-level-week.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoSampaioRJ/projeto-next-level-week/issues"
+  },
+  "homepage": "https://github.com/RodrigoSampaioRJ/projeto-next-level-week#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -19,9 +19,13 @@
   "homepage": "https://github.com/RodrigoSampaioRJ/projeto-next-level-week#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nunjucks": "^3.2.1"
+    "mysql2": "^2.1.0",
+    "nunjucks": "^3.2.1",
+    "sequelize": "^5.21.12",
+    "sqlite3": "^4.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^5.5.1"
   }
 }

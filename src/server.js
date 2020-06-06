@@ -1,5 +1,6 @@
 const express = require('express');
 const server = express();
+const { Entidades } = require('./app/models');
 
 const nunjucks = require('nunjucks');
 nunjucks.configure('src/views', {
@@ -8,7 +9,7 @@ nunjucks.configure('src/views', {
 })
 
 
-
+app.use(express.urlencoded({ extended: false }))
 server.use(express.static('public'))
 
 server.get("/", (req, res) => {

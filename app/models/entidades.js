@@ -1,12 +1,14 @@
 module.exports = (sequelize, DataTypes) => {
-    const Entidades = sequelize.define('Entidades', {
-      name: DataTypes.STRING,
-      endereco: DataTypes.STRING,
-      estado: DataTypes.STRING,
-      endereco2: DataTypes.STRING,
-      cidade: DataTypes.STRING,
-      image: DataTypes.STRING,
-    });
-  
-    return Entidades;
-  }
+
+  const Entidade = sequelize.define('Entidade', {
+    name: DataTypes.STRING,
+    image: DataTypes.STRING(500),
+    endereco: DataTypes.STRING,
+    endereco2: DataTypes.STRING,
+    estado: DataTypes.STRING,
+    cidade: DataTypes.STRING,
+    items: DataTypes.STRING,
+  });
+
+  return Entidade;
+}

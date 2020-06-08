@@ -1,53 +1,55 @@
+'use strict';
+
 module.exports = {
-  up: (queryInterface, Sequelize) => {
+  up: (queryInterface, DataTypes) => {
     return queryInterface.createTable('Entidades', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
       },
       name: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
       },
       image: {
         allowNull: false,
-        type: Sequelize.STRING,
-        unique: true,
+        type: DataTypes.STRING,
+        
       },
       endereco: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
       },
       endereco2: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
       },
       estado: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
       },
       cidade: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
       },
       items: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: DataTypes.STRING,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: DataTypes.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-      }
+        type: DataTypes.DATE,
+      },
     });
   },
 
-  down: (queryInterface, Sequelize) => {
+  down: (queryInterface) => {
     return queryInterface.dropTable('Entidades');
   }
 };
